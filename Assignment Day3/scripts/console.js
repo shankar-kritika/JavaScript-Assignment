@@ -1,4 +1,5 @@
-
+// console.clear() method 
+console.clear(); 
 // console.log() method 
 console.log('Kritika');  
 console.log(24); 
@@ -13,8 +14,6 @@ console.log({a:1, b:2, c:3});
 console.error('This contains an error'); 
 // console.warn() method 
 console.warn('This contains a warning.'); 
-// console.clear() method 
-console.clear(); 
 // console.time() and console.timeEnd() method 
 console.time('Time Taken'); 
 let fun = function(){ 
