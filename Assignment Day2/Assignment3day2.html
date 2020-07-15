@@ -1,0 +1,56 @@
+<html>
+    <head>
+        JavaScript Assignment 3
+
+        <script type="text/javascript">
+            function printDate(){
+                
+                var today = new Date();
+                var dd = today.getDate();
+
+                var mm = today.getMonth()+1; 
+                var yyyy = today.getFullYear();
+                if(dd<10) 
+                {
+                    dd='0'+dd;
+                } 
+
+                if(mm<10) 
+                {
+                    mm='0'+mm;
+                } 
+                today = "Today's Date: "+mm+'-'+dd+'-'+yyyy;
+                document.getElementById("Date").innerHTML=today;
+            }
+        </script>
+
+    </head>
+    <br>
+    <style>
+        button{
+            margin-top: 20px;
+            margin-left: 45%;
+            font-size: 16px;
+            background-color: aqua;
+            align-items: center;
+        }
+
+        img{
+            margin-left: 32%;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 45%;
+        }
+    </style>
+    <body>
+        <br>
+        <img src="https://cms-assets.tutsplus.com/uploads/users/48/posts/32467/preview_image/practice-javascript-and-learn-functions-400x277.png">
+        <br>
+        <button type="button" onclick="printDate()">Click to Print Date</button>
+        <br>
+        <p id="Date">Today's Date:</p>
+    </body>
+</html>
